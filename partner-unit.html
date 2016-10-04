@@ -5,16 +5,16 @@
    		font-family: 'Theinhardt-bold';
     	src: url('TheinhardtBold.otf') format('opentype');
 		}
+
 		.partner-unit-box {
 			border: 1px solid #B8C8D1; 
-			width: 260px; 
-			max-height: 1000px;
 			border-radius: 4px;
 			font-size: 12px;
 			font-family: 'Theinhardt';
 		}
+
 		.partner-unit-box img {
-			width: 150px;
+			width: 70%;
 			margin: 12px 12px 12px 12px;
 		}
 		.tag {	
@@ -25,14 +25,30 @@
 			font-family: 'Theinhardt-bold';
 
 		}
+		.box-wrapper {
+			width: 100%;
+		}
+		/* Smartphones (portrait and landscape) ----------- */
+		@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+			.partner-unit-box {
+			width: 100%;
+		}
+		}
+		@media only screen and (min-device-width : 480px) {
+			.partner-unit-box {
+				width: 260px;
+			}
+		}
 	</style> 
 	</head> 
 	<body> 
-		<div class="partner-unit-box">
-			<div class="tag">
-				IN COLLABORATION WITH
+		<div class="box-wrapper">
+			<div class="partner-unit-box">
+				<div class="tag">
+					IN COLLABORATION WITH
+				</div>
+				<img src="img/bw.png">
 			</div>
-			<img src="img/bw.png">
 		</div>
 	</body>
 	</html> 

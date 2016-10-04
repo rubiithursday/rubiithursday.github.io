@@ -23,6 +23,7 @@
 		.left-block {
 		display: inline-block;	
 		vertical-align: top;	
+		width: 112px;
 		}
 		.left-block img {
 			width: 100px;
@@ -43,10 +44,13 @@
 		.text2 {
 		color: rgba(0, 0, 0, .34);
 		}
+		.box-wrapper {
+			width: 100%;
+		}
 		/* Smartphones (portrait and landscape) ----------- */
 		@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 			.partner-unit-box-pinup {
-				max-width: 100%;
+				width: 100%;
 			}
 		}
 		@media only screen and (min-device-width : 480px) {
@@ -57,23 +61,25 @@
 	</style> 
 	</head> 
 	<body> 		
+		<div class="box-wrapper">
 		<div class="partner-unit-box-pinup">
 			<div class="tag">
 				IN COLLABORATION WITH
 			</div>
 
 			<div class="left-block">
-				<img src="img/pinupmag.jpg">
+				<img src="https://rubiithursday.github.io/img/pinupmag.jpg">
 			</div>
 
 			<div class="right-block">
-					<img src="img/pinup.png">
+					<img src="https://rubiithursday.github.io/img/pinup.png">
 					<br>
 					<div class="text">
 					 PIN-UP is a multi-platform aimed at developing and distributing architectural content. 
 					<br><div class="text2"><u>See the March 2016 issue</u></div><br>
 					</div>
 			</div>
+		</div>
 		</div>
 	</body>
 	</html> 
